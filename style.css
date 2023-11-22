@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.color-pick {
+  position: fixed;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+}
+
+.options{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.option{
+    height: 30px;
+    width: 30px;
+    margin-top: 15px;
+    margin-left: 5px;
+    border-radius: 50%;
+    border: 1px solid black;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.option:hover{
+    transform: scale(1.2) translateX(-10px);
+}
+
+.option:nth-child(1){
+    background-color: white;
+}
+.option:nth-child(2){
+    background-color: black;
+}
+.option:nth-child(3){
+    background-color: red;
+}
+.option:nth-child(4){
+    background-color: green;
+}
+.option:nth-child(5){
+    background-color: blue;
+}
+
+.active{
+    transform: scale(1.2) translateX(-10px);
+}
